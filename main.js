@@ -9,7 +9,7 @@ for (let i = 1; i <= ZAD_COUNT; i++) {
 function WinOpen(task, code = false, height = 800, width = 800, top = 100, left = 100) {
   if (code) {
     window.open(
-      `z${task}/z${task}_mysi_kod.html`,
+      `z${task}/z${task}_olij_kod.html`,
       `okienko_z${task}_kod`,
       `toolbar=no, directories=no, menubar=no, height=${height}, width=${width}, top=${top}, left=${left}`);
 
@@ -17,7 +17,7 @@ function WinOpen(task, code = false, height = 800, width = 800, top = 100, left 
   }
 
   window.open(
-    `z${task}/z${task}_mysi.html`,
+    `z${task}/z${task}_olij.html`,
     `okienko_z${task}`,
     `toolbar=no, directories=no, menubar=no, height=${height}, width=${width}, top=${top}, left=${left}`);
 }
@@ -27,7 +27,7 @@ function createTaskButton(index) {
   button.type = 'button';
 
   button.name = `zadanie${index}`;
-  button.value = `zadanie${index}-Mysiv`;
+  button.value = `zadanie${index}-Oliinyk`;
   button.onclick = () => { WinOpen(index) };
 
   return button;
@@ -38,7 +38,7 @@ function createCodeButton(index) {
   button.type = 'button';
 
   button.name = `zadanie${index}-kod`;
-  button.value = `zadanie${index}-Mysiv-kod`;
+  button.value = `zadanie${index}-Oliinyk-kod`;
   button.onclick = () => { WinOpen(index, true) };
 
   return button;
