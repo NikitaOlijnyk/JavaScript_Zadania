@@ -22,37 +22,37 @@
   
   <body>
     <script>
-      function AB_mys() {
-        let aX_mys = parseFloat(document.getElementById('aX').value);
-        let aY_mys = parseFloat(document.getElementById('aY').value);
+      function AB_oli() {
+        let aX_oli = parseFloat(document.getElementById('aX').value);
+        let aY_oli = parseFloat(document.getElementById('aY').value);
   
-        let bX_mys = parseFloat(document.getElementById('bX').value);
-        let bY_mys = parseFloat(document.getElementById('bY').value);
+        let bX_oli = parseFloat(document.getElementById('bX').value);
+        let bY_oli = parseFloat(document.getElementById('bY').value);
   
   
         document.getElementById("answer").innerHTML = "|AB|= "
-          + (Math.sqrt((aX_mys - bX_mys) ** 2 + (aY_mys - bY_mys) ** 2)).toFixed(2);
+          + (Math.sqrt((aX_oli - bX_oli) ** 2 + (aY_oli - bY_oli) ** 2)).toFixed(2);
       }
   
-      function BC_mys() {
-        let bX_mys = parseFloat(document.getElementById('bX').value);
-        let bY_mys = parseFloat(document.getElementById('bY').value);
+      function BC_oli() {
+        let bX_oli = parseFloat(document.getElementById('bX').value);
+        let bY_oli = parseFloat(document.getElementById('bY').value);
   
-        let cX_mys = parseFloat(document.getElementById('cX').value);
-        let cY_mys = parseFloat(document.getElementById('cY').value);
+        let cX_oli = parseFloat(document.getElementById('cX').value);
+        let cY_oli = parseFloat(document.getElementById('cY').value);
   
         document.getElementById("answer").innerHTML = "|BC|= "
-          + (Math.sqrt((cX_mys - bX_mys) ** 2 + (cY_mys - bY_mys) ** 2)).toFixed(2);
+          + (Math.sqrt((cX_oli - bX_oli) ** 2 + (cY_oli - bY_oli) ** 2)).toFixed(2);
       }
   
-      function AC_mys() {
-        let aX_mys = parseFloat(document.getElementById('aX').value);
-        let aY_mys = parseFloat(document.getElementById('aY').value);
-        let cX_mys = parseFloat(document.getElementById('cX').value);
-        let cY_mys = parseFloat(document.getElementById('cY').value);
+      function AC_oli() {
+        let aX_oli = parseFloat(document.getElementById('aX').value);
+        let aY_oli = parseFloat(document.getElementById('aY').value);
+        let cX_oli = parseFloat(document.getElementById('cX').value);
+        let cY_oli = parseFloat(document.getElementById('cY').value);
   
         document.getElementById("answer").innerHTML = "|AC|= "
-          + (Math.sqrt((aX_mys - cX_mys) ** 2 + (aY_mys - cY_mys) ** 2)).toFixed(2);
+          + (Math.sqrt((aX_oli - cX_oli) ** 2 + (aY_oli - cY_oli) ** 2)).toFixed(2);
       }
   
     </script>
@@ -71,11 +71,11 @@
     <br>
   
   
-    <input type="button" value="Oblicz AB" onclick="AB_mys()"><br>
+    <input type="button" value="Oblicz AB" onclick="AB_oli()"><br>
     <br>
-    <input type="button" value="Oblicz BC" onclick="BC_mys()"><br>
+    <input type="button" value="Oblicz BC" onclick="BC_oli()"><br>
     <br>
-    <input type="button" value="Oblicz AC" onclick="AC_mys()"><br>
+    <input type="button" value="Oblicz AC" onclick="AC_oli()"><br>
     <br>
     <br>
   
